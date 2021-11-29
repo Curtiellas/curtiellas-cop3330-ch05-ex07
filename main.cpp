@@ -12,12 +12,11 @@ When the program detects an equation with no real roots, have it print
 out a message. How do you know that your results are plausible? Can
 you check that they are correct?
 */
+#include <iostream>
+using namespace std;
+
 #include "Quadratic.h"
 #include "Quadratic.cpp"
-
-#include <iostream>
-
-using namespace std;
 
 int main()
 {
@@ -38,7 +37,6 @@ int main()
         else
             throw "Invalid input. Correct example: 3 4 7";
         
-
     } catch (const char *e) {
         cerr << e << endl;
         exit(-1);
