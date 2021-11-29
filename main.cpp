@@ -35,7 +35,9 @@ int main()
         if (sscanf(input, "%lf %lf %lf", &a, &b, &c) == 3)
             quad.setAll(a, b, c);
         else
-            throw "Invalid input. Correct example: 3 4 7";
+            throw "!! Invalid input. Correct example: 3 4 7 !!";
+        if (a == 0)
+            throw "!! a cannot be zero !!";
         
     } catch (const char *e) {
         cerr << e << endl;
